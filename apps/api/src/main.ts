@@ -10,6 +10,8 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { AppModule } from '@src/app.module';
 import { EnvProps } from '@src/config.env';
 
+console.log(process.env)
+
 async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(
     AppModule,
